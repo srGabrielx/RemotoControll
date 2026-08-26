@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Remote | App Android</title>
+    <meta name="description" content="Transforme seu celular Android em um controle remoto físico e de baixa latência para o seu PC.">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --surface-color: #161b22;
+            --primary-color: #4CAF50;
+            --primary-hover: #45a049;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, var(--surface-color) 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+        }
+
+        .download-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .download-card h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1.5rem 0;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .download-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .version-info {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .features {
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .feature-item {
+            background-color: var(--surface-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-item h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        a.repo-link {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        
+        a.repo-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📱 Universal Remote</h1>
+        <p class="subtitle">Transforme seu celular Android em um controle remoto físico e de baixíssima latência para o seu computador.</p>
+    </header>
+
+    <main>
+        <div class="download-card">
+            <h2>Download para Android</h2>
+            <p>Baixe a versão mais recente do aplicativo diretamente do repositório.</p>
+            
+            <!-- Substitua o '#' pelo link direto do Release do GitHub -->
+            <a href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/latest" class="download-btn" id="downloadBtn">
+                ⬇️ Baixar APK Grátis
+            </a>
+            
+            <p class="version-info">Requer Android 7.0 (Nougat) ou superior</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">
+                <h3>🖱️ Trackpad Profissional</h3>
+                <p>Gestos multitouch precisos. Arraste, clique e role a página com suavidade absoluta e feedback tátil.</p>
+            </div>
+            <div class="feature-item">
+                <h3>⌨️ Teclado Nativo</h3>
+                <p>Integração com o teclado virtual do seu próprio celular, além de teclas de mídia e atalhos rápidos de PC.</p>
+            </div>
+            <div class="feature-item">
+                <h3>⚡ Protocolo Rápido</h3>
+                <p>Arquitetura limpa conectando via WebSocket na rede local (Wi-Fi) sem passar por servidores externos.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Código-fonte disponível no <a href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO" class="repo-link">GitHub</a>.</p>
+    </footer>
+
+    <script>
+        // Pequeno script para auto-preencher o link de download se hospedado no próprio GitHub Pages
+        window.addEventListener('DOMContentLoaded', () => {
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+            
+            if (hostname.includes('github.io')) {
+                const username = hostname.split('.')[0];
+                const repo = pathname.split('/')[1];
+                if (username && repo) {
+                    const releaseUrl = `https://github.com/${username}/${repo}/releases/latest`;
+                    document.getElementById('downloadBtn').href = releaseUrl;
+                    document.querySelector('.repo-link').href = `https://github.com/${username}/${repo}`;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

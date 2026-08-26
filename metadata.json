@@ -1,0 +1,6 @@
+{
+  "name": "Universal Remote",
+  "description": "Minimalist, extensible remote control for PC via Wi-Fi/Bluetooth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
