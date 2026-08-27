@@ -12,7 +12,7 @@
 <br/>
 
 <div align="center">
-  <h2><a href="https://github.com/SEU_USUARIO/SEU_REPOSITORIO/releases/latest">⬇️ BAIXAR ÚLTIMA VERSÃO (APK)</a></h2>
+  <h2><a href="https://github.com/srGabrielx/RemotoControll/releases/latest">⬇️ BAIXAR ÚLTIMA VERSÃO (APK)</a></h2>
 </div>
 
 ## 🚀 Sobre o Projeto
@@ -49,7 +49,7 @@ O **Universal Remote** é um aplicativo Android nativo, projetado com foco absol
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+   git clone https://github.com/srGabrielx/RemotoControll.git
    ```
 2. Abra o projeto no **Android Studio**.
 3. Aguarde o Gradle sincronizar as dependências.
